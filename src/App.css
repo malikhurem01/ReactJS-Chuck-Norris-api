@@ -1,0 +1,190 @@
+.body {
+  margin: 35px;
+  background-color: #d1aca9;
+  height: 67vh;
+  padding: 25px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 7%);
+  width: 50%;
+  margin: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(177, 117, 27);
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header {
+  height: 45vh;
+  width: 100%;
+}
+
+header nav {
+  position: absolute;
+  left: 91%;
+  top: 6%;
+  padding: 2px;
+  z-index: 10;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(177, 117, 27);
+
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: rgb(150, 98, 20);
+  border-bottom: rgb(150, 98, 20) 2px solid;
+}
+
+header img {
+  height: 150px;
+}
+
+.circle {
+  animation-name: circle-spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+}
+
+@keyframes circle-spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.image {
+  animation-name: angry-shake;
+  animation-duration: 8s;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes angry-shake {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shakeChuck {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  40% {
+    transform: rotateZ(-6deg);
+  }
+  60% {
+    transofrm: rotateZ(6deg);
+  }
+  80% {
+    transform: rotateZ(-3deg);
+  }
+  90% {
+    transform: rotateZ(3deg);
+  }
+  95% {
+    transform: rotateZ(-2deg);
+  }
+  98% {
+    transform: rotateZ(1deg);
+  }
+  99% {
+    transform: rotateZ(-0.5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.jokeText {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.form {
+  margin-top: 50px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+  background-color: #7d5d3b;
+  border-radius: 3px;
+  border: 1px solid #54381e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d3534;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+  background-color: #634b30;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.categories {
+  display: block;
+  margin: 40px;
+}
+
+.categories select {
+  margin-left: 10px;
+}
